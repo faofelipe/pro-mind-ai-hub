@@ -126,7 +126,7 @@ function Index() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid items-center gap-16 lg:grid-cols-[1.2fr_0.8fr]">
             <div className="space-y-8">
-              <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface-elevated/50 px-3 py-1 font-mono text-xs text-primary">
+              <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface-elevated px-3 py-1 font-mono text-xs text-primary">
                 <span className="relative flex size-2">
                   <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
                   <span className="relative inline-flex size-2 rounded-full bg-primary" />
@@ -149,10 +149,32 @@ function Index() {
                 </a>
                 <a
                   href="#agents"
-                  className="rounded-md border border-border bg-surface-elevated/50 px-6 py-2.5 font-medium transition-colors hover:bg-surface-elevated"
+                  className="rounded-md border border-border bg-surface-elevated px-6 py-2.5 font-medium transition-colors hover:bg-surface-sunken"
                 >
                   Explore Capabilities
                 </a>
+              </div>
+
+              <div className="rounded-xl border border-border bg-surface-elevated p-5 ring-1 ring-black/5">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <p className="font-mono text-xs uppercase tracking-widest text-primary">
+                      Featured Product
+                    </p>
+                    <h3 className="mt-1 text-lg font-semibold">ORUS — OSINT Intelligence Layer</h3>
+                    <p className="max-w-[50ch] text-sm text-muted-foreground">
+                      Automated open-source intelligence collection, correlation, and reporting for security and research teams.
+                    </p>
+                  </div>
+                  <a
+                    href="https://orus.promindai.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 rounded-md bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-transform hover:brightness-110 active:scale-95"
+                  >
+                    Open ORUS Project
+                  </a>
+                </div>
               </div>
             </div>
             <div className="relative">
@@ -161,7 +183,7 @@ function Index() {
                 alt="Neural pathways and logic gates rendered as a technical schematic"
                 width={1024}
                 height={1024}
-                className="aspect-square w-full rounded-[min(2vw,24px)] object-cover shadow-2xl outline outline-1 -outline-offset-1 outline-white/5"
+                className="aspect-square w-full rounded-[min(2vw,24px)] object-cover shadow-2xl outline outline-1 -outline-offset-1 outline-black/5"
               />
             </div>
           </div>
@@ -182,7 +204,7 @@ function Index() {
             {capabilities.map((c) => (
               <div
                 key={c.title}
-                className="rounded-xl bg-surface-elevated p-8 ring-1 ring-white/5"
+                className="rounded-xl bg-surface-elevated p-8 ring-1 ring-black/5"
               >
                 <div className="mb-6 flex size-10 items-center justify-center rounded-md bg-primary/10">
                   {c.mark}
@@ -216,7 +238,7 @@ function Index() {
                 ))}
               </div>
             </div>
-            <div className="rounded-2xl bg-surface-elevated/40 p-8 ring-1 ring-white/5">
+            <div className="rounded-2xl bg-surface-elevated/60 p-8 ring-1 ring-black/5">
               <div className="space-y-6">
                 <div className="rounded border border-border bg-surface-base p-4">
                   <div className="mb-2 flex items-center justify-between">
@@ -235,7 +257,7 @@ function Index() {
                   width={1200}
                   height={800}
                   loading="lazy"
-                  className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-white/5"
+                  className="aspect-[3/2] w-full rounded-lg object-cover outline outline-1 -outline-offset-1 outline-black/5"
                 />
               </div>
             </div>
@@ -270,7 +292,7 @@ function Index() {
                 e.preventDefault();
                 setSent(true);
               }}
-              className="space-y-6 rounded-2xl bg-surface-elevated p-8 ring-1 ring-white/10"
+              className="space-y-6 rounded-2xl bg-surface-elevated p-8 ring-1 ring-black/5"
             >
               <div className="grid gap-4 md:grid-cols-2">
                 <div className="space-y-2">
