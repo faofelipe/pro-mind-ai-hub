@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import neuralImg from "@/assets/neural-architecture.jpg";
 import monitorImg from "@/assets/execution-monitor.jpg";
+import logoAsset from "@/assets/promind-logo.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -86,16 +87,27 @@ function Index() {
     <div className="min-h-screen bg-surface-base font-sans text-foreground">
       <nav className="sticky top-0 z-50 border-b border-hairline bg-surface-base/80 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-          <div className="flex items-center gap-2">
-            <div className="size-6 rounded-sm bg-primary" />
-            <span className="text-lg font-medium tracking-tight">Pro Mind AI</span>
-          </div>
+          <a href="#top" className="flex items-center gap-2">
+            <img
+              src={logoAsset.url}
+              alt="Pro Mind AI logo"
+              className="h-9 w-auto"
+            />
+          </a>
           <div className="hidden items-center gap-8 text-sm font-medium text-muted-foreground md:flex">
             <a href="#agents" className="transition-colors hover:text-primary">
               Agents
             </a>
             <a href="#process" className="transition-colors hover:text-primary">
               Process
+            </a>
+            <a
+              href="https://orus.promindai.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-primary"
+            >
+              Orus Project
             </a>
             <a href="#contact" className="transition-colors hover:text-primary">
               Contact
@@ -304,10 +316,7 @@ function Index() {
 
       <footer className="border-t border-hairline py-12">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-6 md:flex-row">
-          <div className="flex items-center gap-2">
-            <div className="size-4 rounded-sm bg-primary" />
-            <span className="font-medium tracking-tight">Pro Mind AI</span>
-          </div>
+          <img src={logoAsset.url} alt="Pro Mind AI logo" className="h-8 w-auto" />
           <p className="font-mono text-xs text-muted-foreground">
             © 2026 PRO MIND AI SYSTEMS. ALL RIGHTS RESERVED.
           </p>
@@ -317,6 +326,14 @@ function Index() {
             </a>
             <a href="#process" className="hover:text-foreground">
               Process
+            </a>
+            <a
+              href="https://orus.promindai.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground"
+            >
+              Orus Project
             </a>
             <a href="#contact" className="hover:text-foreground">
               Contact
