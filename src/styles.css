@@ -6,7 +6,7 @@
 
 /*
  * Pro Mind AI design system — "Engineered autonomy".
- * Dark zinc surfaces, emerald accent, IBM Plex Sans / Mono.
+ * Clean white surfaces, emerald accent, IBM Plex Sans / Mono.
  */
 
 @theme inline {
@@ -45,28 +45,28 @@
   --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
   --font-code: "IBM Plex Mono", ui-monospace, monospace;
 
-  --surface-base: oklch(0.145 0.005 285.8);
-  --surface-elevated: oklch(0.223 0.006 285.9);
-  --surface-sunken: oklch(0.178 0.005 285.8);
-  --hairline: oklch(0.27 0.006 286 / 50%);
+  --surface-base: oklch(1 0 0);
+  --surface-elevated: oklch(0.985 0.001 286);
+  --surface-sunken: oklch(0.97 0.002 286);
+  --hairline: oklch(0.9 0.004 286);
 
   --background: var(--surface-base);
-  --foreground: oklch(0.967 0.002 286);
+  --foreground: oklch(0.2 0.01 286);
   --card: var(--surface-elevated);
-  --card-foreground: oklch(0.967 0.002 286);
-  --primary: oklch(0.723 0.157 163.2);
-  --primary-foreground: oklch(0.145 0.005 285.8);
-  --secondary: oklch(0.223 0.006 285.9);
-  --secondary-foreground: oklch(0.967 0.002 286);
-  --muted: oklch(0.223 0.006 285.9);
-  --muted-foreground: oklch(0.705 0.008 286.1);
-  --accent: oklch(0.723 0.157 163.2);
-  --accent-foreground: oklch(0.145 0.005 285.8);
+  --card-foreground: oklch(0.2 0.01 286);
+  --primary: oklch(0.55 0.14 163.2);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.96 0.004 286);
+  --secondary-foreground: oklch(0.2 0.01 286);
+  --muted: oklch(0.95 0.003 286);
+  --muted-foreground: oklch(0.55 0.01 286.1);
+  --accent: oklch(0.55 0.14 163.2);
+  --accent-foreground: oklch(1 0 0);
   --destructive: oklch(0.62 0.21 25.5);
-  --destructive-foreground: oklch(0.967 0.002 286);
-  --border: oklch(0.27 0.006 286);
-  --input: oklch(0.27 0.006 286);
-  --ring: oklch(0.723 0.157 163.2);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.88 0.004 286);
+  --input: oklch(0.88 0.004 286);
+  --ring: oklch(0.55 0.14 163.2);
 }
 
 @layer base {
